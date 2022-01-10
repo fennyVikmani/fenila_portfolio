@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenila Vikmani</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap cdn link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="fenila.jpg" alt="">
+        <h3 class="name">Fenila Vikmani</h3>
+        <p class="post">Content Creative Writer</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="ethinos.html">ethinos</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+
+
+
+<section class="portfolio" id="portfolio" style="background-color: black;">
+
+<h1 class="heading" > Fullerton <span>India</span> </h1>
+
+<div class="box-container">
+
+               <img height="200" width="330"  id="1" data-toggle="modal" data-target="#myModal" src='fullerton/fullertonindia_img1.PNG' alt='Text dollar code part one.' style="border-radius: 10px;" />
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <img height="200" width="330" id="2" data-toggle="modal" data-target="#myModal" src='fullerton/fullertonindia_img2.PNG' alt='Text dollar code part one.' style="border-radius: 10px;margin-top: 30px;" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <img height="200" width="330" id="2" data-toggle="modal" data-target="#myModal" src='fullerton/fullertonindia_img3.PNG' alt='Text dollar code part one.' style="border-radius: 10px;margin-top: 30px;" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <img height="200" width="330" id="2" data-toggle="modal" data-target="#myModal" src='fullerton/fullertonindia_img4.PNG' alt='Text dollar code part one.' style="border-radius: 10px;margin-top: 30px;" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <img height="200" width="330" id="2" data-toggle="modal" data-target="#myModal" src='fullerton/fullertonindia_img5.PNG' alt='Text dollar code part one.' style="border-radius: 10px;margin-top: 30px;" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                
+
+                
+                <div id="myModal" class="modal fade" role="dialog">
+               
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <img class="img-responsive" src="" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+       <!--  <a href="https://drive.google.com/folderview?id=1KLMyzV3QjHV5c1e0wHbawGAJp8jazvR8"><button class="btn" id="fort"> download CV <i class="fas fa-download"></i> </button></a> -->
+
+
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+
+
+<!-- contact section ends -->
+
+
+<!-- scroll top button  -->
+
+
+
+<a href="#home" class="top">
+    <img src="images/scroll-top-img.png" alt="">
+</a>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+        $('#myModal').on('show.bs.modal', function (e) {
+            var image = $(e.relatedTarget).attr('src');
+            $(".img-responsive").attr("src", image);
+        });
+});
+</script>
+
+
+</body>
+</html>
